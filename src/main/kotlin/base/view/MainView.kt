@@ -69,4 +69,8 @@ class WorkerView : View() {
 
 class MyFragment: Fragment() {
     override val root = label("This is a popup")
+
+    fun changeSize(num: Int){
+        
+    }
 }
