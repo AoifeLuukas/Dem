@@ -1,6 +1,6 @@
 package base.app
 
-import base.view.MainView
+import base.view.Login
 import tornadofx.App
 
-class MyApp: App(MainView::class, Styles::class)
+class MyApp: App(Login::class, Styles::class)

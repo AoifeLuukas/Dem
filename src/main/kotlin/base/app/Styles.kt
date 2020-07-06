@@ -8,23 +8,24 @@ import tornadofx.*
 class Styles : Stylesheet() {
     companion object {
         val heading by cssclass()
-        val UserButton by cssid("UserButton")
+        val LoginRight by cssid("LoginRight")
     }
 
     init {
         root {
             prefWidth = 900.px
             prefHeight = 600.px
-            backgroundColor += Color.BLACK
-            textFill = Color.WHITE
+            backgroundColor += Color.WHITE
         }
+
         label and heading {
             padding = box(10.px)
             fontSize = 20.px
             fontWeight = FontWeight.BOLD
         }
-        UserButton {
-            prefWidth = 900.px
+        LoginRight {
+            borderColor += box( Color.BLACK )
+            borderWidth += box(5.px)
         }
     }
 }
